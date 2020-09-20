@@ -1,0 +1,17 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import './typography.css';
+
+#app {
+    @apply flex flex-col p-2 min-h-screen;
+}
+
+#app main {
+    @apply flex-1 flex items-center justify-center;
+}
+
+footer {
+    @apply text-center;
+}
