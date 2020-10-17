@@ -10,12 +10,16 @@
         <link href="{{ mix('css/app.css') }}" rel="stylesheet" />
     </head>
     <body id="app">
-        <header>
-            Header goes here
-        </header>
+        <x-navigation>
+            <x-slot name="header">
+                Header
+            </x-slot>
+        </x-navigation>
+
         <main>
             @yield('content')
         </main>
+
         <footer>
             <a href="https://github.com/RVxLab/project-skeleton" target="blank" rel="noopener noreferrer">Open source on Github</a>
         </footer>
