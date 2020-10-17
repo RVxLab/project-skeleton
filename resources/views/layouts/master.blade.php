@@ -9,20 +9,22 @@
 
         <link href="{{ mix('css/app.css') }}" rel="stylesheet" />
     </head>
-    <body id="app">
-        <x-navigation>
-            <x-slot name="header">
-                Header
-            </x-slot>
-        </x-navigation>
+    <body>
+        <main id="app">
+            <x-navigation>
+                <x-slot name="header">
+                    Header
+                </x-slot>
+            </x-navigation>
 
-        <main>
-            @yield('content')
+            <main>
+                @yield('content')
+            </main>
+
+            <footer>
+                <a href="https://github.com/RVxLab/project-skeleton" target="blank" rel="noopener noreferrer">Open source on Github</a>
+            </footer>
         </main>
-
-        <footer>
-            <a href="https://github.com/RVxLab/project-skeleton" target="blank" rel="noopener noreferrer">Open source on Github</a>
-        </footer>
 
         <script src="{{ mix('js/app.js') }}"></script>
     </body>

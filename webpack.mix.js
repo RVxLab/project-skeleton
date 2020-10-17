@@ -1,3 +1,4 @@
+const {DefinePlugin} = require('webpack');
 const mix = require('laravel-mix');
 
 require('laravel-mix-vue3');
@@ -12,6 +13,12 @@ mix
         require('autoprefixer'),
     ])
     .webpackConfig({
+        plugins: [
+            new DefinePlugin({
+                __VUE_OPTIONS_API__: true,
+                __VUE_PROD_DEVTOOLS__: false,
+            }),
+        ],
         resolve: {
             alias: {
                 vue: 'vue/dist/vue.esm-bundler.js',
