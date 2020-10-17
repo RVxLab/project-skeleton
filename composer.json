@@ -1,14 +1,18 @@
 {
-    "name": "laravel/laravel",
+    "name": "rvxlab/project-skeleton",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Laravel project skeleton with a few presets",
     "keywords": [
         "framework",
-        "laravel"
+        "laravel",
+        "skeleton",
+        "vue 3",
+        "pest",
+        "tailwind"
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.3",
+        "php": "^7.4",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
@@ -24,7 +28,8 @@
         "nunomaduro/larastan": "^0.6.4",
         "pestphp/pest": "^0.3.5",
         "pestphp/pest-plugin-laravel": "^0.3.0",
-        "phpunit/phpunit": "^9.3"
+        "phpunit/phpunit": "^9.3",
+        "roave/security-advisories": "dev-master"
     },
     "config": {
         "optimize-autoloader": true,
